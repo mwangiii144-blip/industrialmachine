@@ -70,7 +70,7 @@ export function ProductCard({ product }: { product: Product }) {
             <dt className="text-[11px] font-medium tracking-wide text-muted-foreground uppercase">
               New price
             </dt>
-            <dd className="truncate font-display text-base font-bold text-primary">
+            <dd className="font-display text-base leading-tight font-bold text-primary">
               {product.newPrice}
             </dd>
           </div>
@@ -78,7 +78,7 @@ export function ProductCard({ product }: { product: Product }) {
             <dt className="text-[11px] font-medium tracking-wide text-muted-foreground uppercase">
               Refurbished
             </dt>
-            <dd className="truncate font-display text-base font-bold text-secondary">
+            <dd className="font-display text-base leading-tight font-bold text-secondary">
               {product.refurbishedPrice ?? "On request"}
             </dd>
           </div>
