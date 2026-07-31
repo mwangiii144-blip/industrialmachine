@@ -10,6 +10,9 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as BlogRouteImport } from './routes/blog'
+import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as ProductsRouteImport } from './routes/products'
 import { Route as RepairsRouteImport } from './routes/repairs'
 import { Route as ServicesRouteImport } from './routes/services'
@@ -18,6 +21,21 @@ import { Route as SparePartsRouteImport } from './routes/spare-parts'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProductsRoute = ProductsRouteImport.update({
@@ -43,6 +61,9 @@ const SparePartsRoute = SparePartsRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRoute
+  '/gallery': typeof GalleryRoute
   '/products': typeof ProductsRoute
   '/repairs': typeof RepairsRoute
   '/services': typeof ServicesRoute
@@ -50,6 +71,9 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRoute
+  '/gallery': typeof GalleryRoute
   '/products': typeof ProductsRoute
   '/repairs': typeof RepairsRoute
   '/services': typeof ServicesRoute
@@ -58,6 +82,9 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRoute
+  '/gallery': typeof GalleryRoute
   '/products': typeof ProductsRoute
   '/repairs': typeof RepairsRoute
   '/services': typeof ServicesRoute
@@ -65,14 +92,42 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/products' | '/repairs' | '/services' | '/spare-parts'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/gallery'
+    | '/products'
+    | '/repairs'
+    | '/services'
+    | '/spare-parts'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/products' | '/repairs' | '/services' | '/spare-parts'
-  id: '__root__' | '/' | '/products' | '/repairs' | '/services' | '/spare-parts'
+  to:
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/gallery'
+    | '/products'
+    | '/repairs'
+    | '/services'
+    | '/spare-parts'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/gallery'
+    | '/products'
+    | '/repairs'
+    | '/services'
+    | '/spare-parts'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  BlogRoute: typeof BlogRoute
+  GalleryRoute: typeof GalleryRoute
   ProductsRoute: typeof ProductsRoute
   RepairsRoute: typeof RepairsRoute
   ServicesRoute: typeof ServicesRoute
@@ -86,6 +141,27 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/products': {
@@ -121,6 +197,9 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  BlogRoute: BlogRoute,
+  GalleryRoute: GalleryRoute,
   ProductsRoute: ProductsRoute,
   RepairsRoute: RepairsRoute,
   ServicesRoute: ServicesRoute,
