@@ -14,20 +14,20 @@ import embroideryImg from "@/assets/embroidery.jpg";
 import sparePartsImg from "@/assets/spare-parts.jpg";
 
 export const site = {
-  name: "SewPro Kenya",
+  name: "SewMachine",
   tagline: "Sewing Machine Sales, Spares & Service",
-  phone: "+254 700 123 456",
-  phoneHref: "tel:+254700123456",
-  whatsapp: "254700123456",
-  email: "sales@sewprokenya.co.ke",
-  address: "Kirinyaga Road, Nairobi CBD, Kenya",
+  phone: "+254 717 707 330",
+  phoneHref: "tel:+254717707330",
+  whatsapp: "254717707330",
+  email: "sales@sewmachine.co.ke",
+  address: "Uhuru Market, Jogoo Road, Nairobi, Kenya",
   hours: [
     { day: "Monday – Friday", time: "8:00 AM – 6:00 PM" },
     { day: "Saturday", time: "8:30 AM – 5:00 PM" },
     { day: "Sunday & Public Holidays", time: "Closed (phone support only)" },
   ],
   mapEmbed:
-    "https://www.google.com/maps?q=Kirinyaga%20Road%20Nairobi%20Kenya&output=embed",
+    "https://www.google.com/maps?q=Uhuru%20Market%20Jogoo%20Road%20Nairobi%20Kenya&output=embed",
   socials: [
     { label: "Facebook", href: "https://facebook.com" },
     { label: "Instagram", href: "https://instagram.com" },

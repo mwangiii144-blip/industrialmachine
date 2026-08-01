@@ -5,13 +5,13 @@ import { site } from "@/data/site";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms of Service | SewPro Kenya" },
+      { title: "Terms of Service | SewMachine" },
       {
         name: "description",
         content:
-          "Terms covering pricing, payment, delivery, warranty and returns for sewing machines, spare parts and repair services from SewPro Kenya.",
+          "Terms covering pricing, payment, delivery, warranty and returns for sewing machines, spare parts and repair services from SewMachine.",
       },
-      { property: "og:title", content: "Terms of Service | SewPro Kenya" },
+      { property: "og:title", content: "Terms of Service | SewMachine" },
       {
         property: "og:description",
         content: "Pricing, payment, delivery, warranty and returns terms.",

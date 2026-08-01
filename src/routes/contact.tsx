@@ -20,13 +20,13 @@ import { site, whatsappLink } from "@/data/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact SewPro Kenya | Nairobi Sewing Machine Shop" },
+      { title: "Contact SewMachine | Nairobi Sewing Machine Shop" },
       {
         name: "description",
         content:
-          "Call, WhatsApp, email or visit our Kirinyaga Road showroom in Nairobi for sewing machine sales, spare parts and repairs. Open Monday to Saturday.",
+          "Call, WhatsApp, email or visit our Uhuru Market, Jogoo Road showroom in Nairobi for sewing machine sales, spare parts and repairs. Open Monday to Saturday.",
       },
-      { property: "og:title", content: "Contact SewPro Kenya | Nairobi Sewing Machine Shop" },
+      { property: "og:title", content: "Contact SewMachine | Nairobi Sewing Machine Shop" },
       {
         property: "og:description",
         content: "Phone, WhatsApp, email, business hours and directions to our Nairobi showroom.",
@@ -103,7 +103,7 @@ function ContactPage() {
             <Reveal delay={160}>
               <div className="card-surface overflow-hidden">
                 <iframe
-                  title="SewPro Kenya location on Google Maps"
+                  title="SewMachine location on Google Maps"
                   src={site.mapEmbed}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

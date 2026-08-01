@@ -8,7 +8,7 @@ import { images, site, whatsappLink } from "@/data/site";
 export const Route = createFileRoute("/repairs")({
   head: () => ({
     meta: [
-      { title: "Sewing Machine Repairs in Nairobi & Kenya | SewPro Kenya" },
+      { title: "Sewing Machine Repairs in Nairobi & Kenya | SewMachine" },
       {
         name: "description",
         content:

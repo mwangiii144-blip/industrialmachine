@@ -81,13 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "SewPro Kenya | Sewing Machine Sales, Spares & Repairs" },
+      { title: "SewMachine | Sewing Machine Sales, Spares & Repairs" },
       {
         name: "description",
         content:
           "New and refurbished domestic and industrial sewing machines, genuine spare parts, repairs and training across Kenya.",
       },
-      { name: "author", content: "SewPro Kenya" },
+      { name: "author", content: "SewMachine" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#0F4C81" },
