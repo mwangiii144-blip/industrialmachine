@@ -9,13 +9,13 @@ import { services, site, whatsappLink } from "@/data/site";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Sewing Machine Services in Kenya | SewPro Kenya" },
+      { title: "Sewing Machine Services in Kenya | SewMachine" },
       {
         name: "description",
         content:
           "Sales, repairs, maintenance contracts, installation, spare parts, technical support, operator training and countrywide delivery for sewing machines in Kenya.",
       },
-      { property: "og:title", content: "Sewing Machine Services in Kenya | SewPro Kenya" },
+      { property: "og:title", content: "Sewing Machine Services in Kenya | SewMachine" },
       {
         property: "og:description",
         content:

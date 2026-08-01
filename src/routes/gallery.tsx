@@ -6,13 +6,13 @@ import { galleryImages } from "@/data/site";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery | SewPro Kenya Showroom & Workshop" },
+      { title: "Gallery | SewMachine Showroom & Workshop" },
       {
         name: "description",
         content:
           "Photos of our sewing machine showroom, new stock, refurbished machines, repairs in progress and customer installations across Kenya.",
       },
-      { property: "og:title", content: "Gallery | SewPro Kenya Showroom & Workshop" },
+      { property: "og:title", content: "Gallery | SewMachine Showroom & Workshop" },
       {
         property: "og:description",
         content: "Industrial and domestic machines, workshop photos and customer installations.",

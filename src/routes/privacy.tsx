@@ -5,13 +5,13 @@ import { site } from "@/data/site";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy | SewPro Kenya" },
+      { title: "Privacy Policy | SewMachine" },
       {
         name: "description",
         content:
-          "How SewPro Kenya collects, uses and protects the personal information you share when enquiring about sewing machines, spares or repairs.",
+          "How SewMachine collects, uses and protects the personal information you share when enquiring about sewing machines, spares or repairs.",
       },
-      { property: "og:title", content: "Privacy Policy | SewPro Kenya" },
+      { property: "og:title", content: "Privacy Policy | SewMachine" },
       {
         property: "og:description",
         content: "How we handle and protect your personal information.",

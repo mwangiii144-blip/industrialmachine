@@ -10,13 +10,13 @@ import { images, whyChooseUs } from "@/data/site";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About SewPro Kenya | Sewing Machine Specialists" },
+      { title: "About SewMachine | Sewing Machine Specialists" },
       {
         name: "description",
         content:
-          "SewPro Kenya has supplied and serviced domestic and industrial sewing machines since 2013, with over 500 customers from home sewers to garment factories.",
+          "SewMachine has supplied and serviced domestic and industrial sewing machines since 2013, with over 500 customers from home sewers to garment factories.",
       },
-      { property: "og:title", content: "About SewPro Kenya | Sewing Machine Specialists" },
+      { property: "og:title", content: "About SewMachine | Sewing Machine Specialists" },
       {
         property: "og:description",
         content: "Genuine machines, expert technicians and honest advice since 2013.",
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/about")({
 });
 
 const milestones = [
-  { year: "2013", text: "Opened a two-bench repair shop on Kirinyaga Road." },
+  { year: "2013", text: "Opened a two-bench repair shop at Uhuru Market, Jogoo Road." },
   { year: "2017", text: "Became a stockist for Juki, Jack and Siruba machines." },
   { year: "2021", text: "Launched countrywide delivery and factory maintenance contracts." },
   { year: "2026", text: "Serving 500+ customers with a full parts and training department." },
@@ -51,7 +51,7 @@ function AboutPage() {
           <Reveal>
             <img
               src={images.jukiRow}
-              alt="Rows of new industrial sewing machines in the SewPro Kenya warehouse"
+              alt="Rows of new industrial sewing machines in the SewMachine warehouse"
               loading="lazy"
               className="w-full rounded-3xl border border-border object-cover shadow-card"
             />
