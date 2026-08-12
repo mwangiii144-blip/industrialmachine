@@ -47,9 +47,14 @@ export function Navbar() {
       </div>
 
       <nav className="shell grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 lg:h-18">
-        <Link to="/" className="flex min-w-0 items-center gap-2.5">
-          <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-gradient-brand text-primary-foreground shadow-soft">
-            <Scissors className="size-5" />
+        <Link to="/" className="group flex min-w-0 items-center gap-2.5">
+          <span className="grid size-11 shrink-0 place-items-center overflow-hidden rounded-xl bg-gradient-brand p-0.5 shadow-soft ring-1 ring-border transition-transform duration-300 group-hover:scale-105">
+            <img
+              src={logoAsset.url}
+              alt={`${site.name} logo`}
+              className="size-full rounded-[10px] object-cover"
+              loading="eager"
+            />
           </span>
           <span className="min-w-0">
             <span className="block truncate font-display text-lg leading-tight font-bold text-foreground">
