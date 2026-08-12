@@ -38,8 +38,13 @@ export function Footer() {
       <div className="shell grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-2.5">
-            <span className="grid size-10 place-items-center rounded-xl bg-primary-foreground/15">
-              <Scissors className="size-5" />
+            <span className="grid size-11 shrink-0 place-items-center overflow-hidden rounded-xl bg-primary-foreground/15 p-0.5">
+              <img
+                src={logoAsset.url}
+                alt={`${site.name} logo`}
+                className="size-full rounded-[10px] object-cover"
+                loading="lazy"
+              />
             </span>
             <span className="font-display text-lg font-bold">{site.name}</span>
           </div>
