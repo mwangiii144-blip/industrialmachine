@@ -121,7 +121,7 @@ function Hero() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-4 pb-10 sm:grid-cols-2 lg:grid-cols-4">
           {[
             { title: "500+ Happy Customers", note: "Across all 47 counties" },
             { title: "New & Refurbished", note: "Machines for every budget" },
@@ -150,8 +150,9 @@ const stats = [
 
 function Stats() {
   return (
-    <section className="shell -mt-10 sm:-mt-12">
+    <section className="shell relative z-10 -mt-10 sm:-mt-12">
       <div className="card-surface grid grid-cols-2 gap-6 p-8 shadow-card lg:grid-cols-4">
+
         {stats.map((stat) => (
           <StatItem key={stat.label} {...stat} />
         ))}
