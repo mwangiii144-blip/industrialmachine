@@ -5,13 +5,13 @@ import { site } from "@/data/site";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy | SewMachine" },
+      { title: "Privacy Policy | Coplex Industrial Machine" },
       {
         name: "description",
         content:
-          "How SewMachine collects, uses and protects the personal information you share when enquiring about sewing machines, spares or repairs.",
+          "How Coplex Industrial Machine collects, uses and protects the personal information you share when enquiring about sewing machines, spares or repairs.",
       },
-      { property: "og:title", content: "Privacy Policy | SewMachine" },
+      { property: "og:title", content: "Privacy Policy | Coplex Industrial Machine" },
       {
         property: "og:description",
         content: "How we handle and protect your personal information.",

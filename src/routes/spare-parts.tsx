@@ -8,7 +8,7 @@ import { images, site, whatsappLink } from "@/data/site";
 export const Route = createFileRoute("/spare-parts")({
   head: () => ({
     meta: [
-      { title: "Genuine Sewing Machine Spare Parts in Kenya | SewMachine" },
+      { title: "Genuine Sewing Machine Spare Parts in Kenya | Coplex Industrial Machine" },
       {
         name: "description",
         content:

@@ -6,13 +6,13 @@ import { posts } from "@/data/site";
 export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
-      { title: "Sewing Machine Blog & Buying Guides | SewMachine" },
+      { title: "Sewing Machine Blog & Buying Guides | Coplex Industrial Machine" },
       {
         name: "description",
         content:
           "Practical guides on choosing, using and maintaining sewing machines in Kenya — beginner machines, maintenance routines and common repair problems.",
       },
-      { property: "og:title", content: "Sewing Machine Blog & Buying Guides | SewMachine" },
+      { property: "og:title", content: "Sewing Machine Blog & Buying Guides | Coplex Industrial Machine" },
       {
         property: "og:description",
         content: "Buying guides, maintenance tips and repair know-how from our technicians.",

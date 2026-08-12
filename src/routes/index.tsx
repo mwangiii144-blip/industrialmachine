@@ -30,13 +30,13 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "SewMachine | Sewing Machines, Spare Parts & Repairs" },
+      { title: "Coplex Industrial Machine | Sewing Machines, Spare Parts & Repairs" },
       {
         name: "description",
         content:
           "Buy new and refurbished Juki, Jack, Siruba, Kansai and Butterfly sewing machines in Kenya. Genuine spare parts, expert repairs, training and countrywide delivery.",
       },
-      { property: "og:title", content: "SewMachine | Sewing Machines, Spare Parts & Repairs" },
+      { property: "og:title", content: "Coplex Industrial Machine | Sewing Machines, Spare Parts & Repairs" },
       {
         property: "og:description",
         content:

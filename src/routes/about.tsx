@@ -10,13 +10,13 @@ import { images, whyChooseUs } from "@/data/site";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About SewMachine | Sewing Machine Specialists" },
+      { title: "About Coplex Industrial Machine | Sewing Machine Specialists" },
       {
         name: "description",
         content:
-          "SewMachine has supplied and serviced domestic and industrial sewing machines since 2013, with over 500 customers from home sewers to garment factories.",
+          "Coplex Industrial Machine has supplied and serviced domestic and industrial sewing machines since 2013, with over 500 customers from home sewers to garment factories.",
       },
-      { property: "og:title", content: "About SewMachine | Sewing Machine Specialists" },
+      { property: "og:title", content: "About Coplex Industrial Machine | Sewing Machine Specialists" },
       {
         property: "og:description",
         content: "Genuine machines, expert technicians and honest advice since 2013.",
@@ -51,7 +51,7 @@ function AboutPage() {
           <Reveal>
             <img
               src={images.jukiRow}
-              alt="Rows of new industrial sewing machines in the SewMachine warehouse"
+              alt="Rows of new industrial sewing machines in the Coplex Industrial Machine warehouse"
               loading="lazy"
               className="w-full rounded-3xl border border-border object-cover shadow-card"
             />
