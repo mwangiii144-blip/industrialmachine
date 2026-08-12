@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone, Scissors, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { site } from "@/data/site";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 const quickLinks = [
   { to: "/", label: "Home" },
