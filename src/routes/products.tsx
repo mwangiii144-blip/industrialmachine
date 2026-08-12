@@ -5,13 +5,13 @@ import { ProductExplorer } from "@/components/ProductExplorer";
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "Sewing Machines for Sale in Kenya | SewMachine" },
+      { title: "Sewing Machines for Sale in Kenya | Coplex Industrial Machine" },
       {
         name: "description",
         content:
           "Browse Juki, Jack, Siruba, Kansai, MSS and Butterfly sewing machines with new and refurbished prices in Kenyan shillings. Search and filter by category.",
       },
-      { property: "og:title", content: "Sewing Machines for Sale in Kenya | SewMachine" },
+      { property: "og:title", content: "Sewing Machines for Sale in Kenya | Coplex Industrial Machine" },
       {
         property: "og:description",
         content:

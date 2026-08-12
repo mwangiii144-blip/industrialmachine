@@ -5,13 +5,13 @@ import { site } from "@/data/site";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms of Service | SewMachine" },
+      { title: "Terms of Service | Coplex Industrial Machine" },
       {
         name: "description",
         content:
-          "Terms covering pricing, payment, delivery, warranty and returns for sewing machines, spare parts and repair services from SewMachine.",
+          "Terms covering pricing, payment, delivery, warranty and returns for sewing machines, spare parts and repair services from Coplex Industrial Machine.",
       },
-      { property: "og:title", content: "Terms of Service | SewMachine" },
+      { property: "og:title", content: "Terms of Service | Coplex Industrial Machine" },
       {
         property: "og:description",
         content: "Pricing, payment, delivery, warranty and returns terms.",

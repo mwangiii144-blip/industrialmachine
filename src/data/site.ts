@@ -14,20 +14,20 @@ import embroideryImg from "@/assets/embroidery.jpg";
 import sparePartsImg from "@/assets/spare-parts.jpg";
 
 export const site = {
-  name: "SewMachine",
-  tagline: "Sewing Machine Sales, Spares & Service",
+  name: "Coplex Industrial Machine",
+  tagline: "Industrial & Domestic Sewing Machine Sales, Spares & Service",
   phone: "+254 717 707 330",
   phoneHref: "tel:+254717707330",
   whatsapp: "254717707330",
-  email: "sales@sewmachine.co.ke",
-  address: "Uhuru Market, Jogoo Road, Nairobi, Kenya",
+  email: "sales@coplexindustrialmachine.co.ke",
+  address: "Bujeki Building, Second Room Number 3, Nairobi, Kenya",
   hours: [
     { day: "Monday – Friday", time: "8:00 AM – 6:00 PM" },
     { day: "Saturday", time: "8:30 AM – 5:00 PM" },
     { day: "Sunday & Public Holidays", time: "Closed (phone support only)" },
   ],
   mapEmbed:
-    "https://www.google.com/maps?q=Uhuru%20Market%20Jogoo%20Road%20Nairobi%20Kenya&output=embed",
+    "https://www.google.com/maps?q=Bujeki%20Building%20Second%20Room%20Number%203%20Nairobi%20Kenya&output=embed",
   socials: [
     { label: "Facebook", href: "https://facebook.com" },
     { label: "Instagram", href: "https://instagram.com" },
