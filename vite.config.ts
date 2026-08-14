@@ -10,7 +10,11 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 // Set BASE_PATH in that build; Lovable hosting keeps the default "/".
 const basePath = process.env["BASE_PATH"] || "/";
 
+// Static export (GitHub Pages) skips the Nitro server bundle entirely.
+const staticExport = process.env["STATIC_EXPORT"] === "true";
+
 export default defineConfig({
+  nitro: staticExport ? false : undefined,
   vite: {
     base: basePath,
   },
