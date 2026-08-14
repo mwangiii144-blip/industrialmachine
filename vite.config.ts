@@ -8,7 +8,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 // GitHub Pages serves the site from a sub-path (e.g. /coplex-machine/).
 // Set BASE_PATH in that build; Lovable hosting keeps the default "/".
-const basePath = process.env.BASE_PATH || "/";
+const basePath = process.env["BASE_PATH"] || "/";
 
 export default defineConfig({
   vite: {
