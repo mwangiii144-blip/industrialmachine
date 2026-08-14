@@ -1,13 +1,16 @@
-import butterflyImg from "@/assets/image.png.asset.json";
-import jukiImg from "@/assets/image-2.png.asset.json";
-import sirubaImg from "@/assets/image-3.png.asset.json";
-import jackImg from "@/assets/image-4.png.asset.json";
-import domesticImg from "@/assets/image-5.png.asset.json";
-import jackShowroomImg from "@/assets/image-6.png.asset.json";
-import jukiRowImg from "@/assets/image-7.png.asset.json";
-import mssImg from "@/assets/image-8.png.asset.json";
-import kansaiImg from "@/assets/image-9.png.asset.json";
-import kansaiHeadImg from "@/assets/image-10.png.asset.json";
+import {
+  butterflyImg,
+  jukiImg,
+  sirubaImg,
+  jackImg,
+  domesticImg,
+  jackShowroomImg,
+  jukiRowImg,
+  mssImg,
+  kansaiImg,
+  kansaiHeadImg,
+} from "@/assets/images";
+
 import flatlockImg from "@/assets/flatlock.jpg";
 import buttonholeImg from "@/assets/buttonhole.jpg";
 import embroideryImg from "@/assets/embroidery.jpg";
