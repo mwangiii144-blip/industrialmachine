@@ -6,10 +6,33 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+// GitHub Pages serves the site from a sub-path (e.g. /coplex-machine/).
+// Set BASE_PATH in that build; Lovable hosting keeps the default "/".
+const basePath = process.env.BASE_PATH || "/";
+
 export default defineConfig({
+  vite: {
+    base: basePath,
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    // Emit static HTML for every route so the build can be served by a plain
+    // static host (GitHub Pages) as well as by the Lovable server runtime.
+    prerender: { enabled: true, crawlLinks: true },
+    pages: [
+      { path: "/" },
+      { path: "/products" },
+      { path: "/services" },
+      { path: "/spare-parts" },
+      { path: "/repairs" },
+      { path: "/gallery" },
+      { path: "/blog" },
+      { path: "/about" },
+      { path: "/contact" },
+      { path: "/privacy" },
+      { path: "/terms" },
+    ],
   },
 });
