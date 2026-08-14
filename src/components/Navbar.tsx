@@ -5,7 +5,7 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { site } from "@/data/site";
-import logoAsset from "@/assets/logo.png.asset.json";
+import { logoAsset } from "@/assets/images";
 
 const links = [
   { to: "/", label: "Home" },
