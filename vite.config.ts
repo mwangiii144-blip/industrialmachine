@@ -14,7 +14,7 @@ const basePath = process.env["BASE_PATH"] || "/";
 const staticExport = process.env["STATIC_EXPORT"] === "true";
 
 export default defineConfig({
-  nitro: staticExport ? false : undefined,
+  ...(staticExport ? { nitro: false as const } : {}),
   vite: {
     base: basePath,
   },
